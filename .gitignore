@@ -1,6 +1,6 @@
 .ipynb_checkpoints
 __pycache__
 results
-Data/Illinois_Network.graphml
-Data/Chicago_Network.graphml
-Data/Chicago_Network_Buffer.graphml
+data/Illinois_Network.graphml
+data/Chicago_Network.graphml
+data/Chicago_Network_Buffer.graphml
