@@ -57,7 +57,7 @@ This draft version of the compendium is provided for private use only: not for d
 
 # Original Accessibility Notebook readme.md Content
 
-> The content below was the root `readme.md` document for the Where COVID-19 Accessibility notebook. Some of this content should be moved to the `metadata.csv` file.
+> The content below was the root `readme.md` document for the Where COVID-19 Accessibility notebook. Some of this content should be moved to the `metadata.csv` file and other content can be removed or copied over to `docs/report`
 
 [![CyberGISX](results/figures/original/CyberGISXLogo.svg)](https://cybergisxhub.cigi.illinois.edu/)
 
