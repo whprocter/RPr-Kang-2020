@@ -5,8 +5,8 @@
 # Spatial Accessibility to ICU Beds and Ventilators in Illinois
 
 <div>
-    <img src="img/ChicagoResult.png" height="450" width="350"/>
-    <img src="img/IllinoisResult.png" height="450" width="350"/>
+    <img src="results/figures/original/ChicagoResult.png" height="450" width="350"/>
+    <img src="results/figures/original/IllinoisResult.png" height="450" width="350"/>
 </div>
 
 **Authors:** Jeon-Young Kang, Alexander Michels, Fangzheng Lyu, Shaohua Wang, Nelson Agbodo, Vincent L. Freeman & Shaowen Wang
