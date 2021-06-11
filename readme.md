@@ -36,12 +36,10 @@ The replication study authors are:
 
 To view accessibility measures updated daily, check out: https://wherecovid19.cigi.illinois.edu/
 
-
 ### What's Inside
 
 A quick explanation of the components: **[update and move this information to data/metadata.csv]**
 
-* `COVID-19Acc.ipynb` is a notebook for calculating spatial accessibility and `COVID-19Acc.html` is an export of the notebook as HTML.
 * `Data` contains all of the data necessary for calculations:
   * `Chicago_Network.graphml`/`Illinois_Network.graphml` are GraphML files of the OSMNX street networks for Chicago and Illinois respectively.
   * `GridFile/` has hexagonal gridfiles for Chicago and Illinois
@@ -50,6 +48,3 @@ A quick explanation of the components: **[update and move this information to da
   * `PopData/` contains population data for Chicago and Illinois by census tract and zip code.
   * `Result/` is where we write out the results of the spatial accessibility measures
   * `SVI/`contains data about the Social Vulnerability Index (SVI)
-* `img/` contains some images and HTML maps of the hospitals (the notebook generates the maps)
-* `README.md` is the document you're currently reading!
-* `requirements.txt` is a list of Python packages necessary to use the notebook (besides Jupyter/IPython).
