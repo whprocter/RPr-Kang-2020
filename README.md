@@ -22,12 +22,12 @@ An overview of the folder structure of this repository is provided below. The `R
     |-procedure
     |  +- code/        # any programmatic code, clearly named and commented
     |  +- protocols/   # any non-computational protocols
+    |  +- environment/ # information about the required hardware / software computational environment
     |
     |- results         # all output from workflows and analyses
-    |  +- figures/     # graphs, likely designated for manuscript
-    |  +- maps/        # maps, likely designated for manuscript  
-    |  +- other/       # diagrams, images, and other non-graph graphics
-    |
+    |  +- figures/     # figures, graphs, and maps, likely designated for manuscript or presentations
+    |  +- other/       # other media outputs resulting from the research
+    |  +- tables       # maps, likely designated for manuscript  
     |- readme.md       # the top level description of content
     |- Makefile        # executable Makefile, if applicable
     |- study.Rproj     # RStudio project, if applicable
