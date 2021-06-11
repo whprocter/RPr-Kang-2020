@@ -29,7 +29,6 @@ An overview of the folder structure of this repository is provided below. The `R
     |  +- other/       # diagrams, images, and other non-graph graphics
     |
     |- readme.md       # the top level description of content
-    |- study.Rmd       # executable Rmarkdown , if applicable
     |- Makefile        # executable Makefile, if applicable
     |- study.Rproj     # RStudio project, if applicable
 
