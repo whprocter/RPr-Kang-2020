@@ -12,6 +12,7 @@ The replication study authors are:
 - [Joseph Holler](http://www.middlebury.edu/academics/geog/faculty/node/454160)
 - [Kufre Udoh](https://kufreu.github.io)
 - [Derrick Burt](https://derrickburt.github.io)
+- [Peter Kedron](https://sgsup.asu.edu/peter-kedron)
 - [GEOG 323 Class of Spring 2021](https://gis4dev.github.io)
 
 # Original Accessibility Notebook readme.md Content
