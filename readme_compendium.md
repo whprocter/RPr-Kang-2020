@@ -1,3 +1,5 @@
+Please see [readme.md](readme.md) for an abstract specific to this repository.
+
 # Template for Reproducible and Replicable Research
 This repository is based on a template that contains a folder structure, template documents, and suggestions for best practices for conducting reproducible geographic research. The folder structure presented here can be used to:
 

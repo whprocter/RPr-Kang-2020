@@ -1,4 +1,4 @@
-Please see [Compendium Template](readme_compendium.md) for a guide to the organization of this repository.
+Please see [Template for Reproducible and Replicable Research](readme_compendium.md) for a `readme.md` guide to the organization of this repository.
 
 # Replication Study of Kang et al 2020
 
