@@ -1,6 +1,4 @@
 [![CyberGISX](results/figures/original/CyberGISXLogo.svg)](https://cybergisxhub.cigi.illinois.edu/)
-[![View on CyberGISXHub](results/figures/original/View.svg)](https://cybergisx.cigi.illinois.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcybergis%2FCOVID-19AccessibilityNotebook&urlpath=tree%2FCOVID-19AccessibilityNotebook%2FCOVID-19Acc.ipynb&branch=main)
-[![Open with CyberGISX](results/figures/original/Open.svg)](https://cybergisx.cigi.illinois.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcybergis%2FCOVID-19AccessibilityNotebook&urlpath=tree%2FCOVID-19AccessibilityNotebook%2FCOVID-19Acc.ipynb&branch=main)
 
 # Spatial Accessibility to ICU Beds and Ventilators in Illinois
 
