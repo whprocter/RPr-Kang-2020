@@ -162,7 +162,7 @@ This reproduction study will focus on reproducing spatial accessibility results 
 The aim of this reproduction is to produce results identical to the original study.
 The reproduction will use the indicators and weights as they are described in the original study.
 The reproduction study will use the same software environment, using Python (3.7.6) Jupyter Notebooks in the CybgerGISX environment.
-The research will be completed in full by accessing the CyberGISX environment from both Windows 10 and MacOS operating systems.
+The research will be completed in full by accessing the CyberGISX environment from both Windows 10 and MacOS operating systems. Given the parallel computing processes, running these notebooks in a cyberinfrastucture environment is recommended.
 Here is a complete list of required Python modules:
 
 * pandas==1.0.3
@@ -175,11 +175,33 @@ Here is a complete list of required Python modules:
 * tqdm==4.45.0
 * folium==0.10.1
 
-
 ### Planned differences from the original study
 
 
+The study will atteept to reproduce the original methods exactly, but some deviations will be inevitable due to ambiguous information in the original article.
+1. The road network used in the original analysis (or, at least in the provideed notebook) was restricted to the bounds of Chicago. Thus, the original notebook does not includee hospitals outside the city limits and creates a boundary effect that inaccurately portrays accessibility for Chicago. To fix this, we included a 15-mi (24km) buffer that accounts for a 30-minute drive time outside of the city (at 30mph)
+2. Adding this buffer introduces errors in the OSM syntax. Namely, string characters in the 'maxspeed' column. The following code allows us to remove thos characters:
+**I'm not sure if this counts as a planned deviation**
+3. We will add code to benchmark processing time on important sections of code. 
+4. We plan to add code to produce the same classifide output maps provided in the results of the original study. 
+
+In addition to this, we have compiled two separate notebooks. In one, we deviate from reproducing the exact results and instead aim to add improvements to the original code that we deem more appropriate for the given analysis. In the other, we compile code to automate the pre-processing steps that the original notebook fails to include. We believe this will facilitate a more reproducible and replicable methodology.
+
+In the improvements notebook, we intend to:
+1. Add code to summarizee the road network avg speeeds before and after the ```network_setting``` function is run.
+2. Improvee the ```calculate_catchment_area``` function to avoid calling computationally intensive functions multiple time. Instead of using spatial algorithms like ```nx.ego_graph```, we will use ```nx.single_source_dijkstra_path_length``` to create a dictionary of nodes, and query those nodes to create 10, 20, and 30 minute drive-time polygons. This function will be called ```dijkstra_cca_polygons```
+3. We will add options to run the code with different weighting schemes. Kang et al (2020) applied a set of weights (1.00, 0.68, & 0.22) to respective travel time zones (0-10, 10-20, & 20-30 min) to account for distance decay in their analysis. Though not explained in their methodology, these weights were likely derived from Luo & Qi's (2009) paper, which used the same E2SFCA method to assess spatial accessibility to primary care physicians in northern Illinois. In their results, Luo & Qi (2009) referenced a second weight set that represented a shaper distance decay: 1.00, 0.42, & 0.09. Another weighting scheme can be found in 
+Delamater, Shortridge, and Kilcoyne (2019). They derive a logistic cumulative distance function, with distance decay based on distance to the nearest facility for a population, and find this to be the most accurate weight values for healthcare service distance decay: 1.0, 0.5, 0.1. Both thesee weighting schemes are provided in the improvements code.
+
+In the pre-processing notebook, we intend to automate pre-processing steps for:
+- Covid-19 Cases (and corresponding zip code shapefiles)
+- Tract population data (and corresponding tract shapefiles)
+- Hospital data
+- Chicago hexagon grid
+
 ### Evaluating the reproduction results
+
+In order to evaluate the reproduction results, we will 
 
 
 ## Referencing the original paper
@@ -196,7 +218,7 @@ Kang et al. 2020. Rapidly Measuring Spatial Accessibility of COVID-19 Healthcare
 3. Results
   - Socioeconomic and demographic characteristics in high and low accessibility
   - Computational performance
-4. Concluding Discussion
+4. Concluding Discussion 
 
 
 ### Tables, figures, other elements
@@ -216,3 +238,7 @@ Kang et al. 2020. Rapidly Measuring Spatial Accessibility of COVID-19 Healthcare
 - F13 Social vulnerability characteristics in high and low accessibility areas based on the spatial accessibility measure for population at risk
 
 ## Other references
+
+Luo, W., & Qi, Y. (2009). An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians. *Health & place*, 15(4), 1100-1107.
+
+Delamater, P.L., A.M. Shortridge, and R.C. Kilcoyne. 2019. Using floating catchment are (FCA) metrics to predict health care utilization patterns. BMC Health Services Research 19:144. https://doi.org/10.1186/s12913-019-3969-5.
