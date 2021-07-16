@@ -50,7 +50,7 @@ There is no **randomization** in the original study.
 
 The spatial interaction measurement, distances, and  weighting schemes were selected primarily based on pre-existing criteria for measuring spatial accessibility of resources to a defined population.
 The authors contextualized these methods within healthcare geography literature. They select a enhanced two-step floating catchment area (E2SFCA), citing it as a "commonly used method for measuring spatial accessibility."  
-The author's do not offer a justification for their use of distance or weighting schemes but they do imply on page 2 that the the 10, 20, and 30 minute travel times are pre-set distance of thee E2FSCA method.
+The authors do not offer a justification for their choice of distance or weighting schemes but they do imply on page 2 that the the 10, 20, and 30 minute travel times are pre-set distance of thee E2FSCA method.
 
 The study was originally conducted in CyberGIS Jupyter Notebooks using Python (3.7.6). The original study materials can be found at [https://github.com/cybergis/COVID-19AccessibilityNotebook](https://github.com/cybergis/COVID-19AccessibilityNotebook). It should be noted that this repository does not cover the paper's entire methodology.
 
