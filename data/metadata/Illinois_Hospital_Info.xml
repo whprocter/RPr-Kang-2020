@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--Record created using version 2.0.6 of the USGS Metadata Wizard tool. (https://github.com/usgs/fort-pymdwizard)-->
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>IDPH</origin>
+        <pubdate>20201006</pubdate>
+        <title>Illinois Hospital Dataset, provided by IDPH</title>
+        <geoform>vector digital data</geoform>
+        <onlink>https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Joe Holler, Kufre Udoh, Derrick Burt, Peter Kedron, GEOG 323 Class of Spring 2021</origin>
+            <pubdate>20210601</pubdate>
+            <title>RPr-Kang-2020</title>
+            <geoform>publication</geoform>
+            <onlink>https://github.com/HEGSRR/RPr-Kang-2020&lt;</onlink>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract/>
+      <purpose/>
+      <supplinf>The source dataset could not be found on the IDPH website, the earliest iteration of this dataset that we can find is this one here.</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate/>
+          <enddate/>
+        </rngdates>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <descgeog>Illinois</descgeog>
+      <bounding>
+        <westbc>-91.51</westbc>
+        <eastbc>-87.5</eastbc>
+        <northbc>42.5</northbc>
+        <southbc>36.98</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>biota</themekey>
+      </theme>
+      <theme>
+        <themekt/>
+        <themekey>Hospital, ICU, Ventilator</themekey>
+      </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Illinois</placekey>
+      </place>
+    </keywords>
+    <accconst>Creative Commons Attribution 4.0 International License</accconst>
+    <useconst>None.  Users are advised to read the dataset's metadata thoroughly to understand appropriate use and data limitations.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Alexander Michels</cntper>
+        </cntperp>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>&gt;Natural History Building, Room 1062
+University of Illinois at Urbana-Champaign
+1301 W Green St</address>
+          <city>Urbana</city>
+          <state>Illinois</state>
+          <postal>61801</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>NA</cntvoice>
+      </cntinfo>
+    </ptcontac>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr/>
+    </attracc>
+    <logic></logic>
+    <complete/>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>NA</origin>
+            <pubdate>NA</pubdate>
+            <title>NA</title>
+            <geoform>vector digital data</geoform>
+            <othercit>It is unclear which sources are used to derive this dataset, or whether the data was sourced in its current format.</othercit>
+            <onlink>NA</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate/>
+            </sngdate>
+          </timeinfo>
+          <srccurr/>
+        </srctime>
+        <srccitea>Unknown Sources</srccitea>
+        <srccontr/>
+      </srcinfo>
+      <procstep>
+        <procdesc>See code for processing steps in original: https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/GridFile
+
+See code for </procdesc>
+        <procdate>20201006</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres/>
+        <longres/>
+        <geogunit/>
+      </geograph>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>Illinois_Hospital_Info.shp Attribute Table</enttypl>
+        <enttypd>Table containing attribute information associated with the data set.</enttypd>
+        <enttypds>Producer Defined</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>Hospital</attrlabl>
+        <attrdef>Hospital Name</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <udom/>
+        </attrdomv>
+      </attr>
+      <attr>
+<attrlabl>City</attrlabl><attrdef>City Name</attrdef><attrdefs>Producer Defined</attrdefs></attr>
+      <attr>
+        <attrlabl>ZIP_Code</attrlabl>
+        <attrdef>Zip Code </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <udom/>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Total_Bed</attrlabl>
+        <attrdef>Total beds in the hospital</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>16</rdommin>
+            <rdommax>894</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Adult_ICU</attrlabl>
+        <attrdef>Total ICU beds designated for adult patients</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>4</rdommin>
+            <rdommax>224</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Total_Vent</attrlabl>
+        <attrdef>Total Ventilators in the hospital</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>1</rdommin>
+            <rdommax>73</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Illinois Department of Public Health</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>122 S. Michigan Avenue, 7th and 20th Floors</address>
+          <city>Chicago</city>
+          <state>IL</state>
+          <postal>60603</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>312-814-2793</cntvoice>
+        <cntemail>sciencebase@usgs.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty.</distliab>
+    <custom>While the original dataset is listed in Kang et al's papr as being "provided by IDPH", this specific dataset (one that includes ICU bed and Ventilator availability for each hospital) could not be accessed online. The IDPH provides state level summaries here: http://www.dph.illinois.gov/covid19/hospitalization-utilization. They do not, however, provide these counts for individual hospitals</custom>
+  </distinfo>
+  <metainfo>
+    <metd>20210716</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Derrick Burt</cntper>
+        </cntperp>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>14 Old Chapel Rd</address>
+          <city>Middlebury</city>
+          <state>VT</state>
+          <postal>05753</postal>
+        </cntaddr>
+        <cntvoice>609 955 1364</cntvoice>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Biological Data Profile of the Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001.1-1999</metstdv>
+  </metainfo>
+</metadata>

@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--Record created using version 2.0.6 of the USGS Metadata Wizard tool. (https://github.com/usgs/fort-pymdwizard)-->
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Alexander Michels,  CyberGIS Center for Advanced Digital and Spatial Studies, University of Illinois at Urbana‐Champaign, Urbana, IL, USA</origin>
+        <pubdate>20201006</pubdate>
+        <title>Chicago Grid Shapefile, Derived from unspecified shapefile of Illinois</title>
+        <geoform>vector digital data</geoform>
+        <onlink>https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/GridFile</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Joe Holler, Kufre Udoh, Derrick Burt, Peter Kedron, GEOG 323 Class of Spring 2021</origin>
+            <pubdate>20210601</pubdate>
+            <title>RPr-Kang-2020</title>
+            <geoform>publication</geoform>
+            <onlink>https://github.com/HEGSRR/RPr-Kang-2020</onlink>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This is a shapefile of Chicago that has been converted into a grid of 5-km hexagons.</abstract>
+      <purpose>This dataset was created as a part of Kang et al's methodology for COVID-19 healthcare resources.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20180101</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-88.06640625000001</westbc>
+        <eastbc>-87.58575439453125</eastbc>
+        <northbc>42.23055108552288</northbc>
+        <southbc>41.52708581365465</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>biota</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>Shapefile</themekey>
+      </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Illinois</placekey>
+      </place>
+    </keywords>
+    <accconst>None.  Please see 'Distribution Info' for details.</accconst>
+    <useconst>None.  Users are advised to read the dataset's metadata thoroughly to understand appropriate use and data limitations.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Alexander Michels</cntper>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>Natural History Building, Room 1062
+University of Illinois at Urbana-Champaign
+1301 W Green St</address>
+          <city>Urbana</city>
+          <state>Illinois</state>
+          <postal>61801</postal>
+        </cntaddr>
+        <cntvoice>Unkown</cntvoice>
+        <cntemail>help@cybergis.org</cntemail>
+      </cntinfo>
+    </ptcontac>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr/>
+    </attracc>
+    <logic></logic>
+    <complete/>
+    <lineage>
+      <procstep>
+        <procdesc>See code in https://github.com/HEGSRR/RPr-Kang-2020</procdesc>
+        <procdate></procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>G-polygon</sdtstype>
+        <ptvctcnt>3279</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>CyberGIS Center for Advanced Digital and Spatial Studies, University of Illinois at Urbana‐Champaign, Urbana, IL, USA</cntorg>
+          <cntper>Alexander Michels</cntper>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>Natural History Building, Room 1062
+University of Illinois at Urbana-Champaign
+1301 W Green St,</address>
+          <city>Urbana</city>
+          <state>IL</state>
+          <postal>61801</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>NA</cntvoice>
+        <cntemail>help@cybergis.org</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty.</distliab>
+    <stdorder>
+      <digform><digtinfo>
+          <formname>Digital Data</formname>
+        </digtinfo>
+        <digtopt><onlinopt><computer><networka><networkr>https://github.com/HEGSRR/RPr-Kang-2020</networkr></networka></computer></onlinopt></digtopt></digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20210716</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Derrick Burt</cntper>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>14 Old Chapel Rd.</address>
+          <city>Middlebury</city>
+          <state>VT</state>
+          <postal>05753</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>609 955 1364</cntvoice>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>
