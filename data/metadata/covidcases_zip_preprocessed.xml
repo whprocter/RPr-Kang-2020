@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>US Census Bureau; IDPH; Holler et al. (contact person: Derrick Burt)</origin>
+        <pubdate>20210715</pubdate>
+        <title>Covid-19 Cases by Zip Code Tabulation Area, Illinois, 2020-2021</title>
+        <geoform>tabular digital data</geoform>
+        <onlink>https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/ </onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Joe Holler, Kufre Udoh, Derrick Burt, Peter Kedron, GEOG 323 Class of Spring 2021</origin>
+            <pubdate>20210601</pubdate>
+            <title>RPr-Kang-2020</title>
+            <geoform>publication</geoform>
+            <onlink>https://github.com/HEGSRR/RPr-Kang-2020</onlink>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This dataset provides summaries for COVID Cases by Zip Code Tabulation Area (ZCTA) for Illinois. The COVID cases were pulled from the IDPH website on July 14, 2021. According to the IDPH website; "Data in this section are limited to data collected beginning April 6, 2020 through the date of the last update." These cases have been joined to a CSV file reporting population summaries for each ZCTA so that the data can be normalized.</abstract>
+      <purpose>This dataset has been processed to provided COVID-19 cases with a total population estimate for the each ZCTA in Illinois that can be joined to a shapefile of zip cod geometries.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20200406</begdate>
+          <enddate>20210714</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc/>
+        <eastbc/>
+        <northbc/>
+        <southbc/>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt/>
+        <themekey>Zip Code Tabulation Area; Covid-19 Cases</themekey>
+      </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Illinois</placekey>
+      </place>
+    </keywords>
+    <accconst>Creative Commons Attribution 4.0 International License</accconst>
+    <useconst>None.  Users are advised to read the dataset's metadata thoroughly to understand appropriate use and data limitations.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Derrick Burt</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>14 Old Chapel Road</address>
+          <city>Middlebury</city>
+          <state>VT</state>
+          <postal>05753</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>NA</cntvoice>
+      </cntinfo>
+    </ptcontac>
+    <datacred>US Census Bureau</datacred>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr/>
+    </attracc>
+    <logic></logic>
+    <complete/>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>US Census Bureau</origin>
+            <pubdate>20190101</pubdate>
+            <title>Zip Code Total Population, ACS 2019 5 Year Estimates for Illinois</title>
+            <geoform>tabular digital data</geoform>
+            <othercit>Ne</othercit>
+            <onlink>https://data.census.gov/cedsci/table?q=&amp;g=0400000US17.140000&amp;y=2019&amp;tid=ACSDT5Y2019.B01003</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate/>
+            </sngdate>
+          </timeinfo>
+          <srccurr/>
+        </srctime>
+        <srccitea> ACSDT5Y2019.B01003_data_with_overlays_2021-07-19T095008.csv</srccitea>
+        <srccontr/>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin/>
+            <pubdate>20210714</pubdate>
+            <title>COVID-19 Zip Level Tests and Cases, Illinois 2020-2021</title>
+            <geoform>tabular digital data</geoform>
+            <onlink>https://www.dph.illinois.gov/content/covid-19-zip-level-tests-and-cases</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>20200406</begdate>
+              <enddate>20200714</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr/>
+        </srctime>
+        <srccitea>COVID-19 Zip Level Tests and Cases, Illinois</srccitea>
+        <srccontr/>
+      </srcinfo>
+      <procstep>
+        <procdesc>See code for processing steps in original: https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/GridFile
+
+See code for processing steps in reproduction: https://github.com/HEGSRR/RPr-Kang-2020</procdesc>
+        <procdate>20210715</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>covidcases_zip_preprocessed.csv</enttypl>
+        <enttypd>Comma Separated Value (CSV) file containing data.</enttypd>
+        <enttypds>Producer Defined</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>Unnamed: 0</attrlabl>
+        <attrdef>Index</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>1349</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+  <attrlabl>reportDate</attrlabl><attrdef/><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>2021-07-14T00:00:00</edomv>
+      <edomvd>
+      </edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+        <attrlabl>ZCTA5CE10</attrlabl>
+        <attrdef>Zip code unique ID; joined to covid case data to  (in the RPr-Kang repository) raw/public/Pre-Processing/population_zip_preprocessed.csv</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>60002</rdommin>
+            <rdommax>62999</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>cases</attrlabl>
+        <attrdef/>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>6</rdommin>
+            <rdommax>17549</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>total_tested</attrlabl>
+        <attrdef/>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>64</rdommin>
+            <rdommax>1166598</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>pop</attrlabl>
+        <attrdef>total population in zcta</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>110029</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>Derrick Burt</cntper>
+          <cntorg>Middlebury College</cntorg>
+        </cntperp>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>14 Old Chapel Rd</address>
+          <city>Middlebury</city>
+          <state>VT</state>
+          <postal>057531</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>609 955 1364</cntvoice>
+      </cntinfo>
+    </distrib>
+    <distliab/>
+    <custom>The pre-processed version can be founnd in the Kang et al repositiory: https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/
+
+The original datasets can be found on:
+
+1) US Census Website at this link: https://data.census.gov/cedsci/table?q=&amp;g=0400000US17.140000&amp;y=2019&amp;tid=ACSDT5Y2019.B01003
+
+2) IDPH Website at this link: https://www.dph.illinois.gov/content/covid-19-zip-level-tests-and-cases</custom>
+  </distinfo>
+  <metainfo>
+    <metd>20210716</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Derrick Burt</cntper>
+          <cntorg>Middlebury Collge</cntorg>
+        </cntperp>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>14 Old Chapel Rd</address>
+          <city>Middlebury</city>
+          <state>VT</state>
+          <postal>05753</postal>
+        </cntaddr>
+        <cntvoice>609 955 1364</cntvoice>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>

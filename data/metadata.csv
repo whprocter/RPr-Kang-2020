@@ -1,29 +1,33 @@
 path,name,format,sources,metadata,status
 ,,,,,
-derived/public/ACC_Chicago_2018_ZIP_POP.shp,ACC_Chicago_2018_ZIP_POP,shp,Original Study; data/raw/public/PopData/zipcode_pop_illinois.csv; data/raw/public/PopData/Chicago_ZIPCODE.shp,,included
-derived/public/Chicago_ACC.shp,Chicago_ACC.shp,shp,Original Study; raw/public/GridFile/Chicago_Grid.shp; raw/public/HospitalData/Chicago_Hospital_Info.shp; raw/public/PopData/Chicago_Tract.shp; raw/public/Chicago_Network.graphml; ,,included
-derived/public/Illinois_Acc.shp,Illinois_ACC.shp,shp,Original Study; raw/public/GridFile/Illinois_Grid.shp; raw/public/HospitalData/Illinois_Hospital_Info.shp; raw/public/PopData/Illinois_Tract.shp; raw/public/Illinois_Network.graphml; ,,included
+derived/public/ACC_Chicago_2018_ZIP_POP.shp,ACC_Chicago_2018_ZIP_POP,.shp,Original Study; data/raw/public/PopData/zipcode_pop_illinois.csv; data/raw/public/PopData/Chicago_ZIPCODE.shp,,included
+derived/public/Chicago_ACC.shp,Chicago_ACC,.shp,Original Study; raw/public/GridFile/Chicago_Grid.shp; raw/public/HospitalData/Chicago_Hospital_Info.shp; raw/public/PopData/Chicago_Tract.shp; raw/public/Chicago_Network.graphml; ,,included
+derived/public/Illinois_Acc.shp,Illinois_ACC,.shp,Original Study; raw/public/GridFile/Illinois_Grid.shp; raw/public/HospitalData/Illinois_Hospital_Info.shp; raw/public/PopData/Illinois_Tract.shp; raw/public/Illinois_Network.graphml; ,,included
 derived/public/results.gpkg,results,.gpkg,raw/public/PopData/Chicago_Tract.shp; raw/public/PopData/Chicago_ZIPCODE.shp; raw/public/GridFile/Chicago_Grid.shp; raw/private/Chicago_Network_Buffer.graphml,,derived
 ,,,,,
 raw/private/Chicago_Network_Buffer.graphml,Chicago_Buffer_Network,.graphml,OSMNX; Open Street Map,,derived
 ,,,,,
-raw/public/GridFile/Chicago_Grid.shp,Chicago_Grid,shp,Original Study,Chicago_Grid.xml,included
-raw/public/GridFile/Illinois_Grid.shp,Illinois_Grid,shp,Original Study,Illinois_Grid.xml,included
-raw/public/HospitalData/Chicago_Hospital_Info.shp; raw/public/HospitalData/Chicago_Hospital_Info.shp,Chicago_Hospital_Info,shp,Original Study; HIFLD,Chicago_Hospital_Info.xml,included
-raw/public/HospitalData/Illinois_Hospital_Info.shp,Illinois_Hospital_Info,shp,Original Study; HIFLD,Illinois_Hospital_Info.xml,included
-raw/public/IL_zip_covid19/COVIDZip.json,COVIDZip,json,Original Study; IDPH,No file: more info can be found at https://www.dph.illinois.gov/covid19/statistics,included
-raw/public/PopData/COVIDZip.json,COVIDZip,json,Original Study; IDPH,No file: more info can be found at https://www.dph.illinois.gov/covid19/statistics,included
-raw/public/PopData/Illinois_Tract.shp,Illinois_Tract,shp,Original Study; US Census Bureau; raw/public/PopData/elderly_tract_IL.csv;,tl_2018_24_tract.shp.iso.xml,included
-raw/public/PopData/Illinois_ZIPCODE.shp; raw/public/PopData/Illinois_ZIPCODE.shp,Illinois_ZIPCODE,shp,Original Study; US Census Bureau; raw/public/IL_zip_covid19/COVIDZip.json,cb_2018_us_zcta510_500k.shp.iso.xml,included
-raw/public/PopData/Chicago_Tract.shp,Chicago_Tract,shp,Original Study; US Census Bureau,tract_shp_metadata.xml,included
-raw/public/PopData/Chicago_ZIPCODE.shp,Chicago_ZIPCODE,shp,Original Study; US Census Bureau,?,included
-raw/public/PopData/Chicago_ZIPCODE_UTM.shp,Chicago_ZIPCODE_UTM,shp,Original Study; US Census Bureau,?,included
-raw/public/PopData/CovidCase.csv,CovidCase,csv,Original Study; IDPH,CovidCase.xml,
-raw/public/PopData/elderly_tract_IL.csv,elderly_tract_IL.csv,csv,Original Study; US Census Bureau,elderly_tract_; elderly_tract_IL_colnames..csv,included
-raw/public/PopData/zipcode_pop_illinois.csv,zipcode_pop_illinois,csv,Original Study; US Census Bureau,zipcode_pop_Illinois.xml; zipcode_pop_Illinois_colnames.csv,included
-raw/public/Pre-Processing/cb_2018_us_zcta510_500k.shp,cb_2018_us_zcta510_500k,.shp,US Census Bureau (API),cb_2018_us_zcta510_500k.shp.iso.xml,
-raw/public/Pre-Processing/tl_2018_tl_2018_24_tract.shp,tl_2018_24_tract,.shp,US Census Bureau (API),tl_2018_24_tract.shp.iso.xml,
-raw/public/SVI/SVI2018_ILLINOIS_tract.shp,SVI2018_ILLINOIS_tract.shp,shp,Original Study; CDC,tract_shp_metadata.xml,included
+raw/public/GridFile/Chicago_Grid.shp,Chicago_Grid,.shp,Original Study,Chicago_Grid.xml,included
+raw/public/GridFile/Illinois_Grid.shp,Illinois_Grid,.shp,Original Study,Illinois_Grid.xml,included
+raw/public/HospitalData/Chicago_Hospital_Info.shp; raw/public/HospitalData/Chicago_Hospital_Info.shp,Chicago_Hospital_Info,.shp,Original Study; HIFLD,Chicago_Hospital_Info.xml,included
+raw/public/HospitalData/Illinois_Hospital_Info.shp,Illinois_Hospital_Info,.shp,Original Study; HIFLD,Illinois_Hospital_Info.xml,included
+raw/public/IL_zip_covid19/COVIDZip.json,COVIDZip,.json,Original Study; IDPH,No file: more info can be found at https://www.dph.illinois.gov/covid19/statistics,included
+raw/public/PopData/COVIDZip.json,COVIDZip,.json,Original Study; IDPH,No file: more info can be found at https://www.dph.illinois.gov/covid19/statistics,included
+raw/public/PopData/Illinois_Tract.shp,Illinois_Tract,.shp,Original Study; US Census Bureau; raw/public/PopData/elderly_tract_IL.csv;,tl_2018_24_tract.shp.iso.xml,included
+raw/public/PopData/Illinois_ZIPCODE.shp; raw/public/PopData/Illinois_ZIPCODE.shp,Illinois_ZIPCODE,.shp,Original Study; US Census Bureau; raw/public/IL_zip_covid19/COVIDZip.json,cb_2018_us_zcta510_500k.shp.iso.xml,included
+raw/public/PopData/Chicago_Tract.shp,Chicago_Tract,.shp,Original Study; US Census Bureau,tract_shp_metadata.xml,included
+raw/public/PopData/Chicago_ZIPCODE.shp,Chicago_ZIPCODE,.shp,Original Study; US Census Bureau,?,included
+raw/public/PopData/Chicago_ZIPCODE_UTM.shp,Chicago_ZIPCODE_UTM,.shp,Original Study; US Census Bureau,?,included
+raw/public/PopData/CovidCase.csv,CovidCase,.csv,Original Study; IDPH,CovidCase.xml,
+raw/public/PopData/elderly_tract_IL.csv,elderly_tract_IL.csv,.csv,Original Study; US Census Bureau,elderly_tract_; elderly_tract_IL_colnames..csv,included
+raw/public/PopData/zipcode_pop_illinois.csv,zipcode_pop_illinois,.csv,Original Study; US Census Bureau,zipcode_pop_Illinois.xml; zipcode_pop_Illinois_colnames.csv,included
+raw/public/Pre-Processing/cb_2018_us_zcta510_500k.shp,cb_2018_us_zcta510_500k,.shp,US Census Bureau (API),cb_2018_us_zcta510_500k.shp.iso.xml; cb_2018_us_zcta510_500k.shp.ea.iso.xml,
+raw/public/Pre-Processing/covidcases_zip_preprocessed.csv,covidcases_zip_preprocessed,.csv,US Census Bureau (API),,
+raw/public/Pre-Processing/overfifty_tracts_preprocessed.csv,overfifty_tracts_preprocessed,.csv,US Census Bureau (API),,
+raw/public/Pre-Processing/population_zip_preprocessed.csv,population_zip_preprocessed,.csv,US Census Bureau (API),population_zip_preprocessed.xml,included
+raw/public/Pre-Processing/tl_2018_tl_2018_24_tract.shp,tl_2018_24_tract,.shp,US Census Bureau (API),tl_2018_24_tract.shp.iso.xml; tl_2018_24_tract.shp.ea.iso.xml,included
+raw/public/Pre-Processing/tl_2020_17_place.shp,tl_2020_17_place,.shp,US Census Bureau (API),tl_2020_17_place.shp.iso.xml; tl_2020_17_place.shp.ea.iso.xml,included
+raw/public/SVI/SVI2018_ILLINOIS_tract.shp,SVI2018_ILLINOIS_tract,.shp,Original Study; CDC,tract_shp_metadata.xml,included
 raw/public/Chicago_Network.graphml,Chicago_Network,.graphml,Original Study; OSMNX; Open Street Map,,included
 ,,,,,
 ,,,,,
