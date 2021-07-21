@@ -4,7 +4,7 @@
   <idinfo>
     <citation>
       <citeinfo>
-        <origin>Kang et al</origin>
+        <origin>Kang et al; US Census Bureau</origin>
         <pubdate>20201006</pubdate>
         <title>Illinois At Risk Tract Populations, provided by Kang et al</title>
         <geoform>tabular digital data</geoform>
@@ -140,16 +140,14 @@ See code for processing steps in reproduction: https://github.com/HEGSRR/RPr-Kan
         <attrlabl>NAME</attrlabl>
         <attrdef/>
         <attrdefs>Producer Defined</attrdefs>
-        <attrdomv>
-          <udom/>
+        <attrdomv><udom/>
         </attrdomv>
       </attr>
       <attr>
         <attrlabl>OverFifty</attrlabl>
         <attrdef>Population that is 50 or older</attrdef>
         <attrdefs>Producer Defined</attrdefs>
-        <attrdomv>
-          <rdom>
+        <attrdomv><rdom>
             <rdommin>0</rdommin>
             <rdommax>8799</rdommax>
           </rdom>
@@ -159,8 +157,7 @@ See code for processing steps in reproduction: https://github.com/HEGSRR/RPr-Kan
         <attrlabl>TotalPop</attrlabl>
         <attrdef>Total population</attrdef>
         <attrdefs>Producer Defined</attrdefs>
-        <attrdomv>
-          <rdom>
+        <attrdomv><rdom>
             <rdommin>0</rdommin>
             <rdommax>28671</rdommax>
           </rdom>

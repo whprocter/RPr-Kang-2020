@@ -3,11 +3,11 @@
   <idinfo>
     <citation>
       <citeinfo>
-        <origin>Kang et al;  IDPH</origin>
-        <pubdate>20200410</pubdate>
-        <title>Covid Cases by Zip Code, State of Illinois</title>
-        <geoform>tabular digital data</geoform>
-        <onlink>https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/ </onlink>
+        <origin>Kang et al; US Census Bureau</origin>
+        <pubdate>20201006</pubdate>
+        <title>Social Vulnerability Indices for Illinois Census Tracts, 2018 </title>
+        <geoform>vector digital data</geoform>
+        <onlink>https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/</onlink>
         <lworkcit>
           <citeinfo>
             <origin>Joe Holler, Kufre Udoh, Derrick Burt, Peter Kedron, GEOG 323 Class of Spring 2021</origin>
@@ -20,9 +20,9 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract/>
-      <purpose/>
-      <supplinf>The source of this dataset is not clear. </supplinf>
+      <abstract>This data outlines the CDC/Census Bureau's social vulnerability indices at the census tract level. </abstract>
+      <purpose>As per the census website (https://www.atsdr.cdc.gov/placeandhealth/svi/index.html): Social vulnerability refers to the potential negative effects on communities caused by external stresses on human health. Such stresses include natural or human-caused disasters, or disease outbreaks. Reducing social vulnerability can decrease both human suffering and economic loss. For the purpose of this reproduction, this dataset is not employed because the authors do not provide the code for this portion of the analysis.</purpose>
+      <supplinf>U.S. Census Bureau</supplinf>
     </descript>
     <timeperd>
       <timeinfo>
@@ -52,11 +52,11 @@
       </theme>
       <theme>
         <themekt/>
-        <themekey>Census Tract</themekey>
+        <themekey>CDC; Social Vulnerability Index</themekey>
       </theme>
       <place>
         <placekt>None</placekt>
-        <placekey>Chicago</placekey>
+        <placekey>Illinois</placekey>
       </place>
     </keywords>
     <accconst>Creative Commons Attribution 4.0 International License</accconst>
@@ -68,7 +68,7 @@
         </cntperp>
         <cntaddr>
           <addrtype>physical</addrtype>
-          <address>&gt;Natural History Building, Room 1062
+          <address>Natural History Building, Room 1062
 University of Illinois at Urbana-Champaign
 1301 W Green St</address>
           <city>Urbana</city>
@@ -90,12 +90,11 @@ University of Illinois at Urbana-Champaign
       <srcinfo>
         <srccite>
           <citeinfo>
-            <origin>Illinois Department of Public Health (IDPH)</origin>
-            <pubdate>2020----</pubdate>
-            <title>COVID-19 Zip Level Tests and Cases, Illinois</title>
+            <origin>US Census Bureau</origin>
+            <pubdate>2018</pubdate>
+            <title>Social Vulnerability Indices for Illinois Census Tracts, 2018 </title>
             <geoform>vector digital data</geoform>
-            <othercit>New cases published daily; old data not archived on site</othercit>
-            <onlink>https://www.dph.illinois.gov/content/covid-19-zip-level-tests-and-cases</onlink>
+            <onlink>https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html</onlink>
           </citeinfo>
         </srccite>
         <typesrc>Digital and/or Hardcopy</typesrc>
@@ -107,7 +106,7 @@ University of Illinois at Urbana-Champaign
           </timeinfo>
           <srccurr/>
         </srctime>
-        <srccitea>COVID-19 Zip Level Tests and Cases</srccitea>
+        <srccitea>Illinois SVI 2018</srccitea>
         <srccontr/>
       </srcinfo>
       <procstep>
@@ -121,29 +120,45 @@ See code for processing steps in reproduction: https://github.com/HEGSRR/RPr-Kan
   <eainfo>
     <detailed>
       <enttyp>
-        <enttypl>CovidCase.csv</enttypl>
+        <enttypl>SVI2018_ILLINOIS.shp</enttypl>
         <enttypd>Comma Separated Value (CSV) file containing data.</enttypd>
         <enttypds>Producer Defined</enttypds>
       </enttyp>
       <attr>
-        <attrlabl>zip_code</attrlabl>
+        <attrlabl/>
         <attrdef/>
-        <attrdefs>Producer Defined</attrdefs>
+        <attrdefs/>
         <attrdomv>
           <rdom>
-            <rdommin>60002</rdommin>
-            <rdommax>62959</rdommax>
+            <rdommin/>
+            <rdommax/>
           </rdom>
         </attrdomv>
       </attr>
       <attr>
-        <attrlabl>cases</attrlabl>
+        <attrlabl/>
         <attrdef/>
-        <attrdefs>Producer Defined</attrdefs>
-        <attrdomv>
-          <rdom>
-            <rdommin>6</rdommin>
-            <rdommax>312</rdommax>
+        <attrdefs/>
+        <attrdomv><udom/>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl/>
+        <attrdef/>
+        <attrdefs/>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>8799</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl/>
+        <attrdef/>
+        <attrdefs/>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>28671</rdommax>
           </rdom>
         </attrdomv>
       </attr>
@@ -167,12 +182,13 @@ University of Illinois at Urbana-Champaign
           <country>United States</country>
         </cntaddr>
         <cntvoice>NA</cntvoice>
+        <cntemail>sciencebase@usgs.gov</cntemail>
       </cntinfo>
     </distrib>
     <distliab/>
     <custom>The pre-processed version can be founnd in the Kang et al repositiory: https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/
 
-The original dataset can be found on the IDPH website, but data can only be pulled from the most rcent updat (you could not access the data with the correct dates for this reproduction: https://www.dph.illinois.gov/content/covid-19-zip-level-tests-and-cases
+The original dataset can be found on the US census webiste: https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html
 
 </custom>
   </distinfo>

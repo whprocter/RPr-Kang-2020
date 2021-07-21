@@ -3,9 +3,9 @@
   <idinfo>
     <citation>
       <citeinfo>
-        <origin>US Census Bureau; IDPH; Holler et al. (contact person: Derrick Burt)</origin>
+        <origin>US Census Bureau; Holler et al. (contact person: Derrick Burt)</origin>
         <pubdate>20210715</pubdate>
-        <title>Covid-19 Cases by Zip Code Tabulation Area, Illinois, 2020-2021</title>
+        <title>Population Over Fifty by Census Tract, Illinois, 2018</title>
         <geoform>tabular digital data</geoform>
         <onlink>https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/ </onlink>
         <lworkcit>
@@ -20,8 +20,8 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>This dataset provides summaries for COVID Cases by Zip Code Tabulation Area (ZCTA) for Illinois. The COVID cases were pulled from the IDPH website on July 14, 2021. According to the IDPH website; "Data in this section are limited to data collected beginning April 6, 2020 through the date of the last update." These cases have been joined to a CSV file reporting population summaries for each ZCTA so that the data can be normalized.</abstract>
-      <purpose>This dataset has been processed to provided COVID-19 cases with a total population estimate for the each ZCTA in Illinois that can be joined to a shapefile of zip cod geometries.</purpose>
+      <abstract>This dataset provides estimates for the population Over Fifty all Illinois census tracts for the year 2018. The overe fiftty tracts were pulled with a Census API on July 14, 2021.</abstract>
+      <purpose>This dataset has been processed to serve as the "at-risk" population for the dataset. This data will be joined to the census tract shapefiles (TigerLine) for the spatial accessibility analysis.</purpose>
     </descript>
     <timeperd>
       <timeinfo>
@@ -47,7 +47,7 @@
     <keywords>
       <theme>
         <themekt/>
-        <themekey>Zip Code Tabulation Area; Covid-19 Cases</themekey>
+        <themekey>US Census Bureau; Census Tracts; At Risk Population</themekey>
       </theme>
       <place>
         <placekt>None</placekt>
@@ -86,10 +86,9 @@
           <citeinfo>
             <origin>US Census Bureau</origin>
             <pubdate>20190101</pubdate>
-            <title>Zip Code Total Population, ACS 2019 5 Year Estimates for Illinois</title>
+            <title>Census Tract Sex by Age, 2018 ACS 5 Year Estimate Detailed Table for Illinois</title>
             <geoform>tabular digital data</geoform>
-            <othercit>Ne</othercit>
-            <onlink>https://data.census.gov/cedsci/table?q=&amp;g=0400000US17.140000&amp;y=2019&amp;tid=ACSDT5Y2019.B01003</onlink>
+            <onlink>https://data.census.gov/cedsci/table?q=&amp;y=2018&amp;d=ACS%205-Year%20Estimates%20Detailed%20Tables&amp;tid=ACSDT5Y2018.B01001</onlink>
           </citeinfo>
         </srccite>
         <typesrc>Digital and/or Hardcopy</typesrc>
@@ -101,30 +100,7 @@
           </timeinfo>
           <srccurr/>
         </srctime>
-        <srccitea> ACSDT5Y2019.B01003_data_with_overlays_2021-07-19T095008.csv</srccitea>
-        <srccontr/>
-      </srcinfo>
-      <srcinfo>
-        <srccite>
-          <citeinfo>
-            <origin/>
-            <pubdate>20210714</pubdate>
-            <title>COVID-19 Zip Level Tests and Cases, Illinois 2020-2021</title>
-            <geoform>tabular digital data</geoform>
-            <onlink>https://www.dph.illinois.gov/content/covid-19-zip-level-tests-and-cases</onlink>
-          </citeinfo>
-        </srccite>
-        <typesrc>Digital and/or Hardcopy</typesrc>
-        <srctime>
-          <timeinfo>
-            <rngdates>
-              <begdate>20200406</begdate>
-              <enddate>20200714</enddate>
-            </rngdates>
-          </timeinfo>
-          <srccurr/>
-        </srctime>
-        <srccitea>COVID-19 Zip Level Tests and Cases, Illinois</srccitea>
+        <srccitea>ACSDT5Y2018.B01001_data_with_overlays_2021-07-19T124532.csv</srccitea>
         <srccontr/>
       </srcinfo>
       <procstep>
@@ -138,7 +114,7 @@ See code for processing steps in reproduction: https://github.com/HEGSRR/RPr-Kan
   <eainfo>
     <detailed>
       <enttyp>
-        <enttypl>covidcases_zip_preprocessed.csv</enttypl>
+        <enttypl>overfifty_tracts_preprocessed.csv</enttypl>
         <enttypd>Comma Separated Value (CSV) file containing data.</enttypd>
         <enttypds>Producer Defined</enttypds>
       </enttyp>
@@ -147,59 +123,39 @@ See code for processing steps in reproduction: https://github.com/HEGSRR/RPr-Kan
         <attrdef>Index</attrdef>
         <attrdefs>Producer Defined</attrdefs>
         <attrdomv>
+          <udom/>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>OverFifty</attrlabl>
+        <attrdef/>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
           <rdom>
             <rdommin>0</rdommin>
-            <rdommax>1349</rdommax>
+            <rdommax>8799</rdommax>
           </rdom>
         </attrdomv>
       </attr>
       <attr>
-  <attrlabl>reportDate</attrlabl><attrdef/><attrdefs>Producer Defined</attrdefs><attrdomv>
-    <edom>
-      <edomv>2021-07-14T00:00:00</edomv>
-      <edomvd>
-      </edomvd>
-      <edomvds>Producer defined</edomvds>
-    </edom>
-  </attrdomv>
-</attr>
-      <attr>
-        <attrlabl>ZCTA5CE10</attrlabl>
-        <attrdef>Zip code unique ID; joined to covid case data to  (in the RPr-Kang repository) raw/public/Pre-Processing/population_zip_preprocessed.csv</attrdef>
-        <attrdefs>Producer Defined</attrdefs>
-        <attrdomv><rdom>
-            <rdommin>60002</rdommin>
-            <rdommax>62999</rdommax>
-          </rdom>
-        </attrdomv>
-      </attr>
-      <attr>
-        <attrlabl>cases</attrlabl>
+        <attrlabl>TotalPop</attrlabl>
         <attrdef/>
         <attrdefs>Producer Defined</attrdefs>
-        <attrdomv><rdom>
-            <rdommin>6</rdommin>
-            <rdommax>17549</rdommax>
-          </rdom>
-        </attrdomv>
-      </attr>
-      <attr>
-        <attrlabl>total_tested</attrlabl>
-        <attrdef/>
-        <attrdefs>Producer Defined</attrdefs>
-        <attrdomv><rdom>
-            <rdommin>64</rdommin>
-            <rdommax>1166598</rdommax>
-          </rdom>
-        </attrdomv>
-      </attr>
-      <attr>
-        <attrlabl>pop</attrlabl>
-        <attrdef>total population in zcta</attrdef>
-        <attrdefs>Producer Defined</attrdefs>
-        <attrdomv><rdom>
+        <attrdomv>
+          <rdom>
             <rdommin>0</rdommin>
-            <rdommax>110029</rdommax>
+            <rdommax>28671</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>TRACTCE</attrlabl>
+        <attrdef>tract ID to join to tract shapefiles</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>100</rdommin>
+            <rdommax>990000</rdommax>
           </rdom>
         </attrdomv>
       </attr>
@@ -226,11 +182,11 @@ See code for processing steps in reproduction: https://github.com/HEGSRR/RPr-Kan
     <distliab/>
     <custom>The pre-processed version can be founnd in the Kang et al repositiory: https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/
 
-The original datasets can be found on:
+The original dataset can be found on:
 
-1) US Census Website at this link: https://data.census.gov/cedsci/table?q=&amp;g=0400000US17.140000&amp;y=2019&amp;tid=ACSDT5Y2019.B01003
+1) US Census Website at this link: https://data.census.gov/cedsci/table?q=&amp;y=2018&amp;d=ACS%205-Year%20Estimates%20Detailed%20Tables&amp;tid=ACSDT5Y2018.B01001
 
-2) IDPH Website at this link: https://www.dph.illinois.gov/content/covid-19-zip-level-tests-and-cases</custom>
+</custom>
   </distinfo>
   <metainfo>
     <metd>20210716</metd>
