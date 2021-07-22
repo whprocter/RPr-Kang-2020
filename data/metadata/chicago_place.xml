@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>US Census Bureau; Kang et al. (contact person: A Burt)</origin>
+        <pubdate>20210715</pubdate>
+        <title>SOci</title>
+        <geoform>vector digital data</geoform>
+        <onlink>https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/ </onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Joe Holler, Kufre Udoh, Derrick Burt, Peter Kedron, GEOG 323 Class of Spring 2021</origin>
+            <pubdate>20210601</pubdate>
+            <title>RPr-Kang-2020</title>
+            <geoform>publication</geoform>
+            <onlink>https://github.com/HEGSRR/RPr-Kang-2020</onlink>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This is a shapefile of the census-defined place delineating Chicago for TigerLine 2018. The dataset has been filtered to only include Chicago. I</abstract>
+      <purpose>This dataset has been processed to be converted into 5km hexagonal grids for the spatial accessibility analysis. We have pre-processed it to include only Chicago. As of yet we have not implemented the use of this file because there was no direct way to convert it into hex-grids in Python.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20200406</begdate>
+          <enddate>20210714</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc/>
+        <eastbc/>
+        <northbc/>
+        <southbc/>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt/>
+        <themekey>US Census Bureau; Census Place</themekey>
+      </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Illinois</placekey>
+      </place>
+    </keywords>
+    <accconst>Creative Commons Attribution 4.0 International License</accconst>
+    <useconst>None.  Users are advised to read the dataset's metadata thoroughly to understand appropriate use and data limitations.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Derrick Burt</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>14 Old Chapel Road</address>
+          <city>Middlebury</city>
+          <state>VT</state>
+          <postal>05753</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>NA</cntvoice>
+      </cntinfo>
+    </ptcontac>
+    <datacred>US Census Bureau</datacred>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr/>
+    </attracc>
+    <logic></logic>
+    <complete/>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>US Census Bureau</origin>
+            <pubdate>20180101</pubdate>
+            <title>Illinois Place Shapefiles, TigerLine 2018</title>
+            <geoform>vector digital data</geoform>
+            <onlink>ftp://ftp2.census.gov/geo/ tiger/</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate/>
+            </sngdate>
+          </timeinfo>
+          <srccurr/>
+        </srctime>
+        <srccitea>tl_2018_17_place.sjp</srccitea>
+        <srccontr/>
+      </srcinfo>
+      <procstep>
+        <procdesc>See code for processing steps in original: https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/GridFile
+
+See code for processing steps in reproduction: https://github.com/HEGSRR/RPr-Kang-2020</procdesc>
+        <procdate>20210715</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>overfifty_tracts_preprocessed.csv</enttypl>
+        <enttypd>Comma Separated Value (CSV) file containing data.</enttypd>
+        <enttypds>Producer Defined</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>STATEFP</attrlabl>
+        <attrdef>State FIPS Code</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <udom/>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>PLACEFP</attrlabl>
+        <attrdef>Place FIPS code</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>8799</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>GEOID</attrlabl>
+        <attrdef/>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>28671</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Name</attrlabl>
+        <attrdef>Place name</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>100</rdommin>
+            <rdommax>990000</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>LSAD</attrlabl>
+        <attrdef/>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <udom/>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CLASSFP</attrlabl>
+        <attrdef/>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <udom/>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>Derrick Burt</cntper>
+          <cntorg>Middlebury College</cntorg>
+        </cntperp>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>14 Old Chapel Rd</address>
+          <city>Middlebury</city>
+          <state>VT</state>
+          <postal>057531</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>609 955 1364</cntvoice>
+      </cntinfo>
+    </distrib>
+    <distliab/>
+    <custom>The pre-processed version can be founnd in the Kang et al repositiory: https://github.com/cybergis/COVID-19AccessibilityNotebook/tree/main/Data/
+
+The original dataset can be found on:
+
+1) US Census Website at this link: ftp://ftp2.census.gov/geo/tiger/
+
+</custom>
+  </distinfo>
+  <metainfo>
+    <metd>20210716</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Derrick Burt</cntper>
+          <cntorg>Middlebury Collge</cntorg>
+        </cntperp>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>14 Old Chapel Rd</address>
+          <city>Middlebury</city>
+          <state>VT</state>
+          <postal>05753</postal>
+        </cntaddr>
+        <cntvoice>609 955 1364</cntvoice>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>
