@@ -1,24 +1,36 @@
 # Pre-Registration of Rpr - Reproduction of Kang et al 2020 Rapidly measuring spatial accessibility of COVID-19 healthcare resources: a case study of Illinois, USA
 
-Joseph Holler, Department of Geography, Middlebury College, Middlebury VT 05753 <br>
-Kufre Udoh, Department of Geography, Middlebury College, Middlebury VT 05753 <br>
-Derrick Burt, Department of Geography, Middlebury College, Middlebury VT 05753 <br>
-Drew An-Pham, Department of Geography, Middlebury College, Middlebury VT 05753 <br>
-Students of GEOG 0323, Department of Geography, Middlebury College, Middlebury VT 05753 <br>
+Joseph Holler, Department of Geography, Middlebury College, Middlebury VT 05753   
+Derrick Burt, Department of Geography, Middlebury College, Middlebury VT 05753
+Kufre Udoh, Department of Geography, Middlebury College, Middlebury VT 05753   
+Drew An-Pham, Department of Geography, Middlebury College, Middlebury VT 05753  
+Students of GEOG 0323, Department of Geography, Middlebury College, Middlebury VT 05753  
 
 Version 1.0 | Created June 30, 2021 | Last Updated July 1, 2021 <br>
 
 ## Abstract
 
-Kang, Michels, Lyu, Wang, Agbodo, Freeman and Wang ([2020](https://doi.org/10.1186/s12942-020-00229-x)) published a report outlining a quick and reproducible methodogy that measures and visualizes the access that two different populations, COVID-19 patients and the population risk (defined as those over 50), have to two important resources, ICU beds and Ventilators. To rapidly measure accessibility to Covid-19 healthcare resources, Kang et al. developed a methodology for [parallel implementation](https://www.omnisci.com/technical-glossary/parallel-computing#:~:text=Parallel%20computing%20refers%20to%20the,part%20of%20an%20overall%20algorithm.) of an Enhanced Two-Step Floating Catchment Area (E2FSCA) methodology. This method calculates the ratio between a service feature (in this scenario, hospital ICU beds or ventilators) and the population in its surrounding area, accounting for distance decay. Because this is a computationally intensive analysis that uses large street networks, the authors developed a parallel-E2FSCA (P-E2FSCA), which enables the simultaneous use of up to 4 processors while implementing the analysis.
+Kang, Michels, Lyu, Wang, Agbodo, Freeman and Wang ([2020](https://doi.org/10.1186/s12942-020-00229-x)) published a report outlining a quick and reproducible methodology to measure and visualize the access that two different populations, COVID-19 patients and the population risk (defined as those over 50), have to two important resources, ICU beds and Ventilators.
+To rapidly measure accessibility to Covid-19 healthcare resources, Kang et al. developed a methodology for [parallel implementation](https://www.omnisci.com/technical-glossary/parallel-computing#:~:text=Parallel%20computing%20refers%20to%20the,part%20of%20an%20overall%20algorithm.) of an Enhanced Two-Step Floating Catchment Area (E2FSCA) methodology.
+This method calculates the ratio between a service feature (in this scenario, hospital ICU beds or ventilators) and the population in its surrounding area, accounting for distance decay.
+Because this is a computationally intensive analysis that uses large street networks, the authors developed a parallel-E2FSCA (P-E2FSCA), which enables the simultaneous use of up to 4 processors while implementing the analysis.
 
-This reproduction study is motivated by three factors. First, measuring the accessibility of COVID-19 healthcare resources may allow for a more accurate allocation of healthcare resources. Second, a fully reproducible publication can be more readily replicated in new geographic, temporal, and thematic contexts, and tested for uncertainty due to data constraints and subjective modeling decisions. Third, the CyberGISX platform is a new technology capable of making geographic research both more computationally efficient, interoperable, and accessible; establishing standards for conducting reproducible research in this context is a vital step towards realizing the potential benefits of CyberGIS.
+This reproduction study is motivated by four factors.
+First, measuring the accessibility of COVID-19 healthcare resources may allow for a more accurate allocation of healthcare resources.
+Second, a fully reproducible publication can be more readily replicated in new geographic, temporal, and thematic contexts, and tested for uncertainty due to data constraints and subjective modeling decisions.
+Third, the CyberGISX platform is a new technology capable of making geographic research both more computationally efficient, interoperable, and accessible; establishing standards for conducting reproducible research in this context is a vital step towards realizing the potential benefits of CyberGIS.
+Fourth, the study is being used to teach methods of network analysis and health care accessibility analysis in a cyberinfrastructure environment to geography students.
 
-In this study, we attempt to identically reproduce the 2020 spatial accessibility measurements of Covid-19 healthcare resources for the city of Chicago using the Python Jupyter Notebooks in the University of Illinois Urbana-Champaign CyberGISX platform. We do not attempt to reproduce the 2020 spatial accessibility measurements of Covid-19 healthcare resources for the entire state of Chicago, nor do we attempt to reproduce the social vulnerability characteristic results of high and low accessibility areas. We will compare our reproduction results with the original results using a Spearman's Rho Correlation Coefficient.
+In this study, we attempt to identically reproduce the 2020 spatial accessibility measurements of COVID-19 healthcare resources for the city of Chicago using the Python Jupyter Notebooks in the University of Illinois Urbana-Champaign CyberGISX platform.
+We do not attempt to reproduce the 2020 spatial accessibility measurements of COVID-19 healthcare resources for the entire state of Illinois, nor do we attempt to reproduce the social vulnerability characteristic results of high and low accessibility areas.
+We will compare our reproduction results with the original results using a Spearman's Rho Correlation Coefficient.
 
-The replication study data and code will be made available in a GitHub repository to the greatest extent that licensing and file sizes permit. The reproduction will be performed entirely using the [CyberGISX platform](https://cybergisxhub.cigi.illinois.edu/) with Python (3.7.6) Jupyter Notebooks. The package specifications are outlined in the repository's procedure folder. The repository will be made public at [github.com/GIS4DEV/RP-Kang](https://github.com/GIS4DEV/RP-Kang).
+The replication study data and code will be made available in a GitHub repository to the greatest extent that licensing and file sizes permit.
+The reproduction will be performed entirely using the [CyberGISX platform](https://cybergisxhub.cigi.illinois.edu/) with Python (3.7.6) Jupyter Notebooks.
+The package specifications are outlined in the repository's procedure folder.
+The repository will be made public at [github.com/HEGSRR/RPr-Kang-2020](https://github.com/HEGSRR/RPr-Kang-2020).
 
-Kang et al. 2020. Rapidly Measuring Spatial Accessibility of COVID-19 Healthcare Resources: A Case Study of Illinois, USA. *International Journal of Health Geographics* 19:36. DOI:[https://doi.org/10.1186/s12942-020-00229-x](https://doi.org/10.1186/s12942-020-00229-x).
+Kang et al. 2020. Rapidly Measuring Spatial Accessibility of COVID-19 Healthcare Resources: A Case Study of Illinois, USA. *International Journal of Health Geographics* 19:36. DOI:[10.1186/s12942-020-00229-x](https://doi.org/10.1186/s12942-020-00229-x).
 
 ### Keywords
 
@@ -182,15 +194,15 @@ The study will atteept to reproduce the original methods exactly, but some devia
 1. The road network used in the original analysis (or, at least in the provideed notebook) was restricted to the bounds of Chicago. Thus, the original notebook does not includee hospitals outside the city limits and creates a boundary effect that inaccurately portrays accessibility for Chicago. To fix this, we included a 15-mi (24km) buffer that accounts for a 30-minute drive time outside of the city (at 30mph)
 2. Adding this buffer introduces errors in the OSM syntax. Namely, string characters in the 'maxspeed' column. The following code allows us to remove thos characters:
 **I'm not sure if this counts as a planned deviation**
-3. We will add code to benchmark processing time on important sections of code. 
-4. We plan to add code to produce the same classifide output maps provided in the results of the original study. 
+3. We will add code to benchmark processing time on important sections of code.
+4. We plan to add code to produce the same classifide output maps provided in the results of the original study.
 
 In addition to this, we have compiled two separate notebooks. In one, we deviate from reproducing the exact results and instead aim to add improvements to the original code that we deem more appropriate for the given analysis. In the other, we compile code to automate the pre-processing steps that the original notebook fails to include. We believe this will facilitate a more reproducible and replicable methodology.
 
 In the improvements notebook, we intend to:
 1. Add code to summarizee the road network avg speeeds before and after the ```network_setting``` function is run.
 2. Improvee the ```calculate_catchment_area``` function to avoid calling computationally intensive functions multiple time. Instead of using spatial algorithms like ```nx.ego_graph```, we will use ```nx.single_source_dijkstra_path_length``` to create a dictionary of nodes, and query those nodes to create 10, 20, and 30 minute drive-time polygons. This function will be called ```dijkstra_cca_polygons```
-3. We will add options to run the code with different weighting schemes. Kang et al (2020) applied a set of weights (1.00, 0.68, & 0.22) to respective travel time zones (0-10, 10-20, & 20-30 min) to account for distance decay in their analysis. Though not explained in their methodology, these weights were likely derived from Luo & Qi's (2009) paper, which used the same E2SFCA method to assess spatial accessibility to primary care physicians in northern Illinois. In their results, Luo & Qi (2009) referenced a second weight set that represented a shaper distance decay: 1.00, 0.42, & 0.09. Another weighting scheme can be found in 
+3. We will add options to run the code with different weighting schemes. Kang et al (2020) applied a set of weights (1.00, 0.68, & 0.22) to respective travel time zones (0-10, 10-20, & 20-30 min) to account for distance decay in their analysis. Though not explained in their methodology, these weights were likely derived from Luo & Qi's (2009) paper, which used the same E2SFCA method to assess spatial accessibility to primary care physicians in northern Illinois. In their results, Luo & Qi (2009) referenced a second weight set that represented a shaper distance decay: 1.00, 0.42, & 0.09. Another weighting scheme can be found in
 Delamater, Shortridge, and Kilcoyne (2019). They derive a logistic cumulative distance function, with distance decay based on distance to the nearest facility for a population, and find this to be the most accurate weight values for healthcare service distance decay: 1.0, 0.5, 0.1. Both thesee weighting schemes are provided in the improvements code.
 
 In the pre-processing notebook, we intend to automate pre-processing steps for:
@@ -201,7 +213,7 @@ In the pre-processing notebook, we intend to automate pre-processing steps for:
 
 ### Evaluating the reproduction results
 
-In order to evaluate the reproduction results, we will 
+In order to evaluate the reproduction results, we will
 
 
 ## Referencing the original paper
@@ -218,7 +230,7 @@ Kang et al. 2020. Rapidly Measuring Spatial Accessibility of COVID-19 Healthcare
 3. Results
   - Socioeconomic and demographic characteristics in high and low accessibility
   - Computational performance
-4. Concluding Discussion 
+4. Concluding Discussion
 
 
 ### Tables, figures, other elements
