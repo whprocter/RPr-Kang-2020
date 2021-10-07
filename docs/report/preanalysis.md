@@ -245,7 +245,7 @@ Kang et al. 2020. Rapidly Measuring Spatial Accessibility of COVID-19 Healthcare
 - F8 Accessibility measure in Chicago
 - F9 Accessibility measure in Illinois
 - F10 Accessibility measure in Illinois
-- F11 Acceessibility measure
+- F11 Accessibility measure
 - F12 Comparison of spatial accessibility measure
 - F13 Social vulnerability characteristics in high and low accessibility areas based on the spatial accessibility measure for population at risk
 
