@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+preferred-citation:
+  type: generic
+  authors:
+  - family-names: "Holler"
+    given-names: "Joseph"
+    orcid: "https://orcid.org/0000-0002-2381-2699"
+  - family-names: "Burt"
+    given-names: "Derrick"
+  - family-names: "Udoh"
+    given-names: "Kufre"
+  - family-names: "Kedron"
+    given-names: "Peter"
+    orcid: "https://orcid.org/0000-0002-1093-3416"
+  title: "Reproduction and Reanalysis of Kang et al 2020 Spatial Accessibility of COVID-19 Health Care Resources"
+  doi: 10.17605/OSF.IO/N92V3
+  year: 2022
