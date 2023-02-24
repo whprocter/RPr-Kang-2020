@@ -57,7 +57,7 @@ To view accessibility measures updated daily, check out: https://wherecovid19.ci
 
 ### What's Inside
 
-A quick explanation of the components: **[update and move this information to data/metadata.csv]**
+A quick explanation of the components: 
 
 * `Data` contains all of the data necessary for calculations:
   * `Chicago_Network.graphml`/`Illinois_Network.graphml` are GraphML files of the OSMNX street networks for Chicago and Illinois respectively.

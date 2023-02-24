@@ -6,7 +6,7 @@ Kufre Udoh, Department of Geography, Middlebury College, Middlebury VT 05753
 Drew An-Pham, Department of Geography, Middlebury College, Middlebury VT 05753  
 Students of GEOG 0323, Department of Geography, Middlebury College, Middlebury VT 05753  
 
-Version 1.0 | Created June 30, 2021 | Last Updated July 1, 2021 <br>
+Version 1.1 | Created June 30, 2021 | Last Updated February 24, 2023
 
 ## Abstract
 
