@@ -15,7 +15,9 @@
 - new query for OSM data to run on new package version **and to include 24140.2 buffer around Chicago**
 - report which hospital catchments have been calculated as each is completed (added to `hospital_measure_acc` function)
 - output results as layers in a geopackage
-- must use buffered street network! notebook dijoint areas and edge effects with provided street network
+- must use buffered street network! The provided network has disjoint areas and edge effects
+- classify results for mapping, and map in style more similar to the publication
+- graph statistical distribution of results with histograms as in the publication
 
 ## Types of Edge effects
 
@@ -26,6 +28,8 @@
 
 Remember the original notebook was meant to use the whole Illinois network for all analyses, and for good reason.
 
+- using only Chicago data gives results closer to the Original results; save switching to Illinois population data for the reanalysis
+
 ## Processing Times (4 processors)
 
 | Network | Code Version | Population | Service | Setup Time | Catchment Time |
@@ -34,10 +38,10 @@ Remember the original notebook was meant to use the whole Illinois network for a
 | No Buffer | Replication | >50 | Ventilators | 0:32 | 2:23 |
 | No Buffer | Replication | Covid | Beds | 0:18 | 2:12
 | No Buffer | Replication | Covid | Ventilators | 0:18 | 2:12
-| Buffer | Replication | >50 | Beds | ? | ? |
-| Buffer | Replication | >50 | Ventilators | 2:23 | 5:52 |
-| Buffer | Replication | Covid | Beds | 2:06 | 5:57
-| Buffer | Replication | Covid | Ventilators | 1:58 | 5:35
+| Buffer | Replication | >50 | Beds | 1:38 | 5:49 |
+| Buffer | Replication | >50 | Ventilators | 1:41 | 5:52 |
+| Buffer | Replication | Covid | Beds | 1:30 | 5:36
+| Buffer | Replication | Covid | Ventilators | 2:07 | 5:39
 
 
 # Reanalysis Notebook Revisions
