@@ -18,6 +18,14 @@
 - must use buffered street network! The provided network has disjoint areas and edge effects
 - classify results for mapping, and map in style more similar to the publication
 - graph statistical distribution of results with histograms as in the publication
+- calculate population centroids in data section, and do not recalculate them for each scenario
+
+# Reanalysis Revisions
+(in addition to original notebook revisions)
+
+- calculate catchment areas by creating one set of nodes within 30m drive time and selecting 20m and 10m sets from the 30m set by attribute, rather than creating three ego_graphs
+- add option to run analysis on a small subset of hospitals
+- change default speed limit for roads to 30 mph (the urban speed limit for Illinois)
 
 ## Types of Edge effects
 
@@ -42,6 +50,10 @@ Remember the original notebook was meant to use the whole Illinois network for a
 | Buffer | Replication | >50 | Ventilators | 1:41 | 5:52 |
 | Buffer | Replication | Covid | Beds | 1:30 | 5:36
 | Buffer | Replication | Covid | Ventilators | 2:07 | 5:39
+| Buffer | Reanalysis | >50 | Beds | ? | 1:42 |
+| Buffer | Reanalysis | >50 | Ventilators | ? | ? |
+| Buffer | Reanalysis | Covid | Beds | ? | ?
+| Buffer | Reanalysis | Covid | Ventilators | ? | ?
 
 
 # Reanalysis Notebook Revisions
@@ -49,6 +61,8 @@ Remember the original notebook was meant to use the whole Illinois network for a
 
 # Future possibilities
 - Permanently store a data structure of hospitals and associated catchment area geometries, rather than recalculating for different scenarios
-- Use Geopandas or similar data structures to optimize spatial analysis tasks, e.g. overlay analysis or finding nearest point
-- make plot distribution of results more dynamic by automatically selecting the variable (Rather than having two sections of code)
+- Use Geopandas and spatial indexing to optimize spatial analysis tasks, e.g. overlay analysis or finding nearest point
 - make sure geopackage layer outputs only contain the recently calculated field (i.e. icu_beds OR vents, but not both)
+- use `osmnx.speed()` function to improve speed data
+- use `osmnx.graph` function's `simplify` option to simplify the graph, rather than the network setting procedure
+- apply 55mph speed limit to highways (the urban speed limit in Illinois)
