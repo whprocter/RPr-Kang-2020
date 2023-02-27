@@ -19,6 +19,7 @@
 - classify results for mapping, and map in style more similar to the publication
 - graph statistical distribution of results with histograms as in the publication
 - calculate population centroids in data section, and do not recalculate them for each scenario
+- improve markdown narrative and code comments for legibility
 
 # Reanalysis Revisions
 (in addition to original notebook revisions)
@@ -46,10 +47,10 @@ Remember the original notebook was meant to use the whole Illinois network for a
 | No Buffer | Replication | >50 | Ventilators | 0:32 | 2:23 |
 | No Buffer | Replication | Covid | Beds | 0:18 | 2:12
 | No Buffer | Replication | Covid | Ventilators | 0:18 | 2:12
-| Buffer | Replication | >50 | Beds | 1:38 | 5:49 |
-| Buffer | Replication | >50 | Ventilators | 1:41 | 5:52 |
-| Buffer | Replication | Covid | Beds | 1:30 | 5:36
-| Buffer | Replication | Covid | Ventilators | 2:07 | 5:39
+| Buffer | Replication | >50 | Beds | 1:38 | 5:49 , 6:01, 5:43, 5:38 |
+| Buffer | Replication | >50 | Ventilators | 1:41 | 5:52, 6:14 |
+| Buffer | Replication | Covid | Beds | 1:30 | 5:36, 5:50
+| Buffer | Replication | Covid | Ventilators | 2:07 | 5:39, 5:49
 | Buffer | Reanalysis | >50 | Beds | ? | 1:42 |
 | Buffer | Reanalysis | >50 | Ventilators | ? | ? |
 | Buffer | Reanalysis | Covid | Beds | ? | ?
@@ -66,3 +67,7 @@ Remember the original notebook was meant to use the whole Illinois network for a
 - use `osmnx.speed()` function to improve speed data
 - use `osmnx.graph` function's `simplify` option to simplify the graph, rather than the network setting procedure
 - apply 55mph speed limit to highways (the urban speed limit in Illinois)
+- joining hospitals to street network takes 1:16. Could this be faster with geopandas?
+- normalizing the results makes it more difficult to compare... do they need to be normalized?
+- use area-weighted reaggregation rather than centroids
+- uncertainties using convex hull for generating catchment area polygons
