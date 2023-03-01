@@ -20,6 +20,7 @@
 - graph statistical distribution of results with histograms as in the publication
 - calculate population centroids in data section, and do not recalculate them for each scenario
 - improve markdown narrative and code comments for legibility
+- add metadata
 
 # Reanalysis Revisions
 (in addition to original notebook revisions)
