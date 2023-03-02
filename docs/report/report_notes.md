@@ -62,6 +62,8 @@ Remember the original notebook was meant to use the whole Illinois network for a
 
 
 # Future possibilities
+- crop map figures with `tight_layout` https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html
+- plot map of highways
 - Permanently store a data structure of hospitals and associated catchment area geometries, rather than recalculating for different scenarios
 - Use Geopandas and spatial indexing to optimize spatial analysis tasks, e.g. overlay analysis or finding nearest point
 - make sure geopackage layer outputs only contain the recently calculated field (i.e. icu_beds OR vents, but not both)
