@@ -80,6 +80,8 @@ Remember the original notebook was meant to use the whole Illinois network for a
 ### 02-COVID-19Acc-Original.ipynb
 - make sure `.here` is in the repository root
 - implement pyhere so this runs on multiple operating systems?
+- osmnx version 1.1.2 does not read graphs
+- **paths for larger graph are not correct** 
 - update to package versions on CyberGISX Python 3 if they work?
 - use if-else structure to load original street network or generate a new one, rather than using two different code blocks
 - Chicago_Network_Buffer.graphml is backed up on OSF at https://osf.io/z8ery 
