@@ -74,3 +74,15 @@ Remember the original notebook was meant to use the whole Illinois network for a
 - normalizing the results makes it more difficult to compare... do they need to be normalized?
 - use area-weighted reaggregation rather than centroids
 - uncertainties using convex hull for generating catchment area polygons
+
+## 2023-10-13 Notes
+
+### 02-COVID-19Acc-Original.ipynb
+- make sure `.here` is in the repository root
+- implement pyhere so this runs on multiple operating systems?
+- update to package versions on CyberGISX Python 3 if they work?
+- use if-else structure to load original street network or generate a new one, rather than using two different code blocks
+- Chicago_Network_Buffer.graphml is backed up on OSF at https://osf.io/z8ery 
+- for reproducibility, studies should use osmnx.settings module to set overpass_settings to a specific date. otherwise, reproduction attempts will pull different data from the OSM server. If files are small enough or other storage is feasible, save a version of OSM data extracts to load directly with the research compendium, so that reproduction studies do not create demand on the OSM Overpass servers. 
+- code for exporting data as geopackages, including osm graph data, so that it can be viewed in QGIS. Export to PRIVATE folders or SCRATCH folder if > 100mb
+- apparently there are different builds/versions of packages on Conda for different operating systems
