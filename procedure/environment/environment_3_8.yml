@@ -7,7 +7,6 @@ dependencies:
   - numpy=1.22.0
   - geopandas=0.10.2 
   - networkx=2.6.3  
-  - osmnx=1.1
   - folium=0.12.1.post1
   - pip
   - pip:
