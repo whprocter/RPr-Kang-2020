@@ -15,7 +15,7 @@ The original paper is an implementation of the enhanced two-step floating catchm
 - [Derrick Burt](https://derrickburt.github.io)
 - [Peter Kedron](https://sgsup.asu.edu/peter-kedron)
 - [GEOG 323 Classes of Spring 2021 and Fall 2021](https://gis4dev.github.io)
-- [William Procter] (http://github.io/whprocter/)
+- [William Procter](http://github.io/whprocter/)
 
 ## Repository Documents
 
