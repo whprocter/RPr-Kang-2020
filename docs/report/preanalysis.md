@@ -195,7 +195,7 @@ The aim of this reproduction is to produce results identical to the original stu
 The reproduction will use the indicators and weights as they are described in the original study.
 The reproduction study will use the same software environment, using Python (3.7.6) Jupyter Notebooks in the CybgerGISX environment.
 The research will be completed in full by accessing the CyberGISX environment from both Windows 10 and MacOS operating systems. Given the parallel computing processes, running these notebooks in a cyberinfrastructure environment is recommended.
-Here is a complete list of required Python modules:
+Here is a list of required Python modules:
 
 * pandas==1.0.3
 * numpy==1.18.1
